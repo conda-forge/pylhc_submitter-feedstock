@@ -1,5 +1,5 @@
 {% set name = "pylhc_submitter" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylhc_submitter-{{ version }}.tar.gz
-  sha256: e1a4e61633b0d788ccab1135c6dc976b1fa8775d3fb81458504979fb3b4f9130
+  sha256: 585126f65b9ca8f96004427a0fb16c32dda7243f7736e3e6f07a820fb30f4546
 
 build:
-  number: 1
-  skip: true   # [py<37]
+  number: 0
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
