@@ -1,5 +1,5 @@
 {% set name = "pylhc_submitter" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylhc_submitter-{{ version }}.tar.gz
-  sha256: 4b04a57230143f3810f1af5bfadd729f426beb4a10932288e1d32040e614b4cd
+  sha256: de0539803e367aee58c1f7bb7ee24016b35146654528fbde653463b80b7098c4
 
 build:
   number: 0
