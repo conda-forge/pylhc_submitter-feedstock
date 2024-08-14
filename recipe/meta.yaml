@@ -16,6 +16,8 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    noarch: python
   host:
     - python
     - hatchling
