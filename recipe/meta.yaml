@@ -11,13 +11,12 @@ source:
   sha256: 7ccba499cbc717eb68501a79e8d90ae81fb4d5ac0db262d2be98667c797b60a9
 
 build:
+  noarch: python
   number: 0
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    noarch: python
   host:
     - python
     - hatchling
