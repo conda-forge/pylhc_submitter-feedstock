@@ -14,20 +14,19 @@ build:
   number: 0
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
-
-requirements:
-  host:
-    - pip
-    - python
-  run:
-    - generic_parser >=1.0.8
-    - python-htcondor >=8.9.2  # [not win]
-    - matplotlib-base >=3.2.0
-    - numpy >=1.19
-    - pandas >=1.0
-    - python
-    - scipy >=1.4.0
-    - tfs-pandas >=2.0
+Host requirements:
+  - python >=3.9
+  - hatchling
+  - pip
+Run requirements:
+  - python >=3.9
+  - numpy >=1.24
+  - scipy >=1.10
+  - pandas >=2.1
+  - tfs-pandas >=3.8
+  - matplotlib-base >=3.8
+  - python-htcondor >=8.9.2  # [linux]
+  - generic_parser >=1.1
 
 test:
   imports:
